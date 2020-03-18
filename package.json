@@ -1,0 +1,16 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "run-back-blog":"node server/blog-api/src/serve.js"
+  },
+  "workspaces": {
+    "packages": [
+      "server/*",
+      "clients/*",
+      "shared/*"
+    ]
+  },
+  "license": "MIT"
+}
